@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="./styles.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <nav>
+        <a class="active" href="./index.html">HTML Cheat Sheet</a>
+        <a href="./csscheatsheet.html">CSS Cheat Sheet</a>
+    </nav>
+
+    <header id="mainHeader">
+        <h1>HTML Cheat Sheet</h1>
+    </header>
+    
+    <h4>About HTML</h3>
+    <article>
+        <p>The document type declaration
+            <span class="code">&lt;!DOCTYPE html&gt;</span> is required as the first line of an HTML document. The doctype declaration is an instruction to the
+            browser about what type of document to expect and which version of HTML is being used, in this case it’s HTML5.
+        </p>
+    </article>
+
+    <h2>Basic Tags</h2>
+    <table>
+        <thead>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;HTML&gt;</span></td>
+                <td>HTML Element</td>
+                <td>Creates an HTML document. This should be added after the <span class="code">!DOCTYPE</span> declaration.
+                    All content/structure for an HTML document should be contained between the opening and closing <span
+                        class="code">&lt;HTML&gt;</span> tag.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;head&gt;</span></td>
+                <td>Head Element</td>
+                <td>Contains general information about an HTML page that isn't displayed on the page itself. 
+                    This information is called <strong><em>metadata</em></strong> and includes things like the title of the HTML document and links to stylesheets.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;body&gt;</span></td>
+                <td>Body Element</td>
+                <td>This represents the content of an HTML document. <br>
+                    <strong>Note:</strong> <em>there can only be 1 body element. </em></td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;title&gt;</span></td>
+                <td>Title Element</td>
+                <td>Contains a text that defines the title of an HTML document. The title is displayed in the browser’s title bar or tab
+                    in which the HTML page is displayed.
+                    <strong>Note:</strong> <em>This element can only be contained inside a document's <span class="code">&lt;head&gt;</span> element.</em></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Text Tags</h2>
+    <table>
+        <thead>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;h1&gt; - &lt;h6&gt;</span></td>
+                <td>Heading Element</td>
+                <td>The heading elements are ordered from the highest level <span class="code">&lt;h1&gt;</span>
+                    (biggest)
+                    to the lowest level <span class="code">&lt;h6&gt;</span> (smallest).</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;strong&gt;</span></td>
+                <td>Bold Element</td>
+                <td>Bolds text.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;em&gt;</span></td>
+                <td>Italicize Element</td>
+                <td>Italicizes text.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;code&gt;</span></td>
+                <td>For code</td>
+                <td>Used to define source code (usually in monospace).</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Formatting</h2>
+    <table>
+        <thead>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;p&gt;</span></td>
+                <td>Paragraph Element</td>
+                <td>Contains and displays a block of text.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;span&gt;</span></td>
+                <td>Span Element</td>
+                <td>An inline container for text and can be used to group text for styling purposes. However, as <span class="code">&lt;span&gt;</span> is a generic
+                    container to separate pieces of text from a larger body of text, its use should be avoided if a more semantic element is
+                    available.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;br&gt;</span></td>
+                <td>Line Break Element</td>
+                <td>Creates a line break in text and is especially useful where a division of text is required, like in a postal address.<br>
+                    <strong>Note: </strong> <em>The line break element requires only an opening tag and must not have a closing tag.</em></td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;blockquote&gt;</span></td>
+                <td>Blockquote Element</td>
+                <td>Puts content in a quote (indents text from both sides).</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;div&gt;</span></td>
+                <td>Div Element</td>
+                <td>Used as a container that divides an HTML document into sections. Can contain <em>flow content</em> such as headings, paragraphs, links, images, etc.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Links and its Attributes</h2>
+    <table>
+        <thead>
+            <th>Attribute</th>
+            <th>Name</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;a&gt;</span></td>
+                <td>Anchor Element</td>
+                <td>The anchor element is used to create hyperlinks in an HTML document. The hyperlinks can point to other webpages,
+                    files on the same server, a location on the same page, or any other URL via the hyperlink reference attribute <span class="code">href</span>.</td>
+            </tr>
+            <tr>
+                <td><span class="code">href="../"</span></td>
+                <td>href Attribute</td>
+                <td>Determines the location the anchor element points to. 
+                    Can be used to create text links or image links.
+                </td>
+            </tr>
+            <tr>
+                <td><span class="code">target</span></td>
+                <td>Target Attribute</td>
+                <td>Specifies where the hyperlink should be opened. E.g. <span class="code">target="_blank"</span> will open the
+                    hyperlink in a new tab. </td>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="examples">
+                    Examples
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span class="code">&lt;a href="URL"&gt; click text &lt;/a&gt;</span> 
+                </td>
+                <td>
+                    Creates a hyperlink to an URL.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span class="code">&lt;a href="mailto:EMAIL_ADDRESS"&gt; click text &lt;/a&gt;</span> 
+                </td>
+                <td>
+                    Creates a hyperlink to an email address.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span class="code">&lt;a name="NAME"&gt; click text &lt;/a&gt;</span> 
+                </td>
+                <td>
+                    Creates a target location within a document.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span class="code">&lt;a href="#NAME"&gt; click text &lt;/a&gt;</span> 
+                </td>
+                <td>
+                    Creates a link to that target location.
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h2>Lists</h2>
+    <table>
+        <thead>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;ul&gt;</span></td>
+                <td>Unordered List Element</td>
+                <td>Used to create a list of items in no particular order. Each individual list item will have a bullet point by default.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;li&gt;</span></td>
+                <td>List Item Element</td>
+                <td>Create list items inside ordered lists and unordered lists.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;ol&gt;</span></td>
+                <td>Ordered List Element</td>
+                <td>Creates a list of items in sequential order (numbered lists).</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;dl&gt;</span></td>
+                <td>Definition List Element</td>
+                <td>Used to specify (start) the definition list. Commonly used to implement a glossary. Can put <strong>only</strong>
+                    <span class="code">&lt;dt&gt;</span> and <span class="code">&lt;dd&gt;</span> tags inside the <span class="code">&lt;dl&gt;</span> tag.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;dt&gt;</span></td>
+                <td>Definition Term Element</td>
+                <td>Preceds eacch defintion term. Used to specify the defintion terms/items in a definition list. This can be
+                    paragraphs, line breaks, images, links, lists, etc. within the <span class="code">&lt;dd&gt;</span> tag. It can also use
+                    a <span class="code">&lt;dt&gt;</span> tag within <span class="code">&lt;details&gt;</span> and 
+                    <span class="code">&lt;figure&gt;</span> tags to represent a caption for content.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;dd&gt;</span></td>
+                <td>Defintion Element</td>
+                <td>Precedes each definition. Used to describe an item within a list of defined terms in a definition list. This can be
+                    paragraphs, line breaks, images, links, lists, etc. within the <span class="code">&lt;dd&gt;</span> tag.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Table Tags</h2>
+    <table>
+        <thead>
+            <th>Tag</th>
+            <th>Name</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;table&gt;</span></td>
+                <td>Table</td>
+                <td>The wrapper element for all HTML tables.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;thead&gt;</span></td>
+                <td>Table Head</td>
+                <td>The set of rows defining the column headers in a table.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;tbody&gt;</span></td>
+                <td>Table Body</td>
+                <td>The set of rows containing actual table data.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;tr&gt;</span></td>
+                <td>Table Row</td>
+                <td>The table row container. This is used to add rows to a table before adding table data <span
+                        class="code">&lt;td&gt;</span> and table headings <span class="code">&lt;th&gt;</span></td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;td&gt;</span></td>
+                <td>Table Data</td>
+                <td>The table data element (nested inside a table row <span class="code">&lt;tr&gt;</span> element).</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;tfoot&gt;</span></td>
+                <td>Table Foot</td>
+                <td>The set of rows defining the footer in a table.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Table Attributes</h2>
+    <table>
+        <thead>
+            <th>Attribute</th>
+            <th>Name</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">colspan</span></td>
+                <td>Column Span</td>
+                <td>Defines how many columns a <span class="code">&lt;td&gt;</span> element should span.</td>
+            </tr>
+            <tr>
+                <td><span class="code">rowspan</span></td>
+                <td>Row Span</td>
+                <td>Defines how many rows a <span class="code">&lt;td&gt;</span> element should span.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Other HTML Things</h2>
+    <table>
+        <thead>
+            <th>Attribute</th>
+            <th>Name</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;!-- commments --&gt;</span></td>
+                <td>Comment</td>
+                <td>This is how you comment in HTML.</td>
+            </tr>
+            <tr>
+                <td><span class="code">href="../relPath.ext"</span></td>
+                <td>Relative File Path</td>
+                <td>Tells the browser to look for the file path in from the current folder.</td>
+            </tr>
+            <tr>
+                <td><span class="code">href="https:URLpath"</span></td>
+                <td>Absolute Path</td>
+                <td>Tells browser to go to the URL.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Forms</h2>
+    <table>
+        <thead>
+            <th>Attribute</th>
+            <th>Name</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;to be added&gt;</span></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h4>Semantic HTML</h4>
+    <article>
+        <p>Semantic HTML introduces meaning to the code we write. Before Semantic HTML the elements didn’t have any meaning as
+            to what it does or what content goes in it. An element such as
+        <span class="code">&lt;div&gt;</span> was used as a general-purpose element to create things from headers to footers to articles. With Semantic HTML we
+            were introduced to elements that tell developers and browsers exactly what it does and what content should go in it.
+            </p>
+        <h4>Element Placement</h3>
+        <p>Semantic HTML introduces elements that can tell developers exactly what the element does or where it’s placed based
+            on the name of that element. Some of these elements are <span class="code">&lt;header&gt;</span>, <span class="code">&lt;nav&gt;</span>, <span class="code">&lt;main&gt;</span>, and <span class="code">&lt;footer&gt;</span>. 
+            <span class="code">&lt;header&gt;</span> describes the content at the top of the page <span class="code">&lt;body&gt;</span>.
+                It may include a logo, navigational links or a search bar. <span class="code">&lt;nav&gt;</span> encapsulates the page’s
+                navigational links. It is often placed inside the <span class="code">&lt;header&gt;</span> or <span
+                    class="code">&lt;footer&gt;</span>.
+                <span class="code">&lt;main&gt;</span> encapsulates the main content of a page between the header/navigation and the footer areas. <span class="code">&lt;footer&gt;</span> includes the page’s footer content at the bottom of the <span class="code">&lt;body&gt;</span>.
+            </p>
+    </article>
+    <h3>Embedding Media</h3>
+    <table>
+        <thead>
+            <th>Attribute</th>
+            <th>Name</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;video&gt;</span></td>
+                <td>Video Element</td>
+                <td>Embeds a media player for video playback. The <span class="code">&lt;src&gt;</span> attribute will contain the URL
+                    to the video. Adding the <span class="code">&lt;controls&gt;</span>
+                    attribute will display video controls in the media player. May add "Video not supported" if the browser is unable to
+                    display the video.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;audio&gt;</span></td>
+                <td>Audio Element</td>
+                <td>Embeds audio content. The audio type may also be specified (e.g. <span class="code"> type="audio/mp3"</span>. Adding
+                    the attribute <span class="code">&lt;controls&gt;</span> will display audio controls. <br>
+                    e.g. <span class="code">&lt;video src="coding.mp4" controls&gt;Video not supported&lt;/video&gt;</span></td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;embed&gt;</span></td>
+                <td>Media Element</td>
+                <td>Used to implement any type of media. <br> <strong>Note:</strong> <em><span class="code">&lt;embeded&gt;</span> is
+                        deprecated. Other alternatives such as <span class="code">&lt;video&gt;</span>, <span class="code">&lt;audio&gt;</span>,
+                        and <span class="code">&lt;img&gt;</span> should be used.</em></td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3" class="examples">
+                    Other Useful Attributes
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span class="code">src</span> 
+                </td>
+                <td>
+                    The URL/source of the video/audio/embed content to be embed.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span class="code">autoplay</span> 
+                </td>
+                <td>
+                    Boolean attribute. Automatically plays video/audio content.
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <span class="code">loop</span> 
+                </td>
+                <td>
+                    Boolean attribute. Automatically loops video/audio content.
+                </td>
+            </tr>
+    </table>
+
+    <h3>Figure (images) and Figure Captions</h3>
+    <table>
+        <thead>
+            <th>Attribute</th>
+            <th>Name</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;figure&gt;</span></td>
+                <td>Figure Element</td>
+                <td>Used to encapsulate media such as an image, diagram, or code snippet.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;img&gt;</span></td>
+                <td>Imgage Element</td>
+                <td>Embed images in documents.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;alt&gt;</span></td>
+                <td>Alt Attribute</td>
+                <td>An <span class="code">&lt;img&gt;</span> element can have alternative text via the <span class="code">&lt;alt&gt;</span> attribute. The alternative
+                    text will be displayed if an image fails to render due to an incorrect URL, if the image format is not supported by
+                    the browser, if the image is blocked from being displayed, or if the image has not been received from the URL.
+                    The text will be read aloud if screen reading software is used and helps support visually impaired users by providing a
+                    text descriptor for the image content on a webpage.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;figcaption&gt;</span></td>
+                <td>Figure Caption Element</td>
+                <td>used to describe the media encapsulated within the <span class="code">&lt;figure&gt;</span> element. Developers will
+                    normally use <span class="code">&lt;figcaption&gt;</span>
+                    within the <span class="code">&lt;figure&gt;</span> element to group the media and description. This way, if a developer decides to change
+                    the position of the media, the description will follow along with it.</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>Text Elements</h3>
+    <table>
+        <thead>
+            <th>Attribute</th>
+            <th>Name</th>
+            <th>Description</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td><span class="code">&lt;section&gt;</span></td>
+                <td>Section Element</td>
+                <td>Defines elements in a document <em>(e.g. chapters, headings, any other area of the documents with the same
+                    theme).</em> Generally is used to define a theme for a webpage.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;article&gt;</span></td>
+                <td>Article Element</td>
+                <td>Holds content that makes sense on its own such as articles, blogs, and comments. <span class="code">&lt;article&gt;</span> is used to write
+                    independent content for the section theme.</td>
+            </tr>
+            <tr>
+                <td><span class="code">&lt;aside&gt;</span></td>
+                <td>Aside Element</td>
+                <td>Used to mark additional information that can enhance another element but isn't required in order to understand the
+                    main content <em>(e.g. bibliographies, endnotes, comments, pull quotes, editorial sidebars, additional info)</em>. Usually, this
+                    information would be in a sidebar or a location where it doesn't obstruct the main piece of content. 
+                    Can be used alongside <span class="code">&lt;article&gt;</span> or <span class="code">&lt;section&gt;</span>. </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+<footer>
+    <blockquote><a href="#mainHeader">Return to the top!</a></blockquote> 
+</footer>
+</html>
